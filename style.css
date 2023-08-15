@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #212121;
+    /* background-color: rgb(72, 171, 138); */
+    background: url('./images/backround.png') no-repeat 0 0;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 8px;
+    margin-left: 40px;
+}
+
+.menu-list li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: color 0.5s;
+    color: #fff;
+}
+
+.menu-list li.active,
+.menu-list li:hover {
+    color: #fa0a02;
+}
+
+.main {
+    padding-top: 75px;
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.page {
+    max-width: 50%;
+    padding: 0 60px;
+}
+
+.title {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    margin: 48px auto;
+}
+
+.title strong {
+    font-size: 1.5em;
+    display: block;
+    line-height: 80px;
+}
+
+.msg {
+    max-width: 80%;
+    font-size: 1em;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+button.click {
+    border: none;
+    outline: none;
+    /* background-color: #fff; */
+    color:blue;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 7px 12px 20px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button.click:hover {
+    background-color: rgb(2, 78, 119);   
+}
+
+button span {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+button.click i {
+    font-size: 1.7em;
+    margin-left: 40px;
+}
+.pot {
+    padding: 10px 0 40 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.pot img {
+    max-width: 600px;
+}
+
+.colors {
+    display: flex;
+    border-top: 3px dotted #fff;
+}
+
+.colors .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    min-height: 180px;
+    padding-top: 40px;
+}
+
+.item img {
+    position: relative;
+    width: 60px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+.item img:hover {
+    width: 70px;
+}
+
+.item .color-selector {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: #068feb;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.information {
+    background-color: #0bf5f1;
+    border-radius: 50px;
+    position: absolute;
+    left: -40%;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    line-height: 28px;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.item:first-child {
+    transform: translateX(-60%);
+}
+
+.item:last-child {
+    transform: translateX(50%);
+}
+
+.item.active img {
+    width: 100px;
+}
+
+.item.active .color-selector {
+    width: 28px;
+    height: 28px;
+}
+
+.item.active {
+    min-width: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Right Side  */
+
+
+/* .item.blue .color-selector {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #f95604;
+     width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    border: 3px solid #fff;
+    /* border-radius: 50%; } */
+
+/* .item.yellow .color-selector { */
+    /* background-color: #ecdc47;} */
